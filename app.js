@@ -1,37 +1,8 @@
 
-var Car = function() {
-  // this is a private variable
-  var speed = 10;
+var oldArray = [1,2,3,4,5];
 
-  // these are public methods
-  this.accelerate = function(change) {
-    speed += change;
-  };
+// Only change code below this line.
 
-  this.decelerate = function() {
-    speed -= 5;
-  };
-
-  this.getSpeed = function() {
-    return speed;
-  };
-};
-
-var Bike = function() {
-
-  // Only change code below this line.
-  var gear = 4;
-  
-  this.setGear = function(set) {
-    gear = set;
-  };
-  
-  this.getGear = function() {
-    return gear;
-  };
-
-};
-
-var myCar = new Car();
-
-var myBike = new Bike();
+var newArray = oldArray.map(function(val){
+  return val + 3;
+});
