@@ -1,8 +1,9 @@
 
-var oldArray = [1,2,3,4,5];
+var array = [4,5,6,7,8];
+var singleVal = 0;
 
 // Only change code below this line.
 
-var newArray = oldArray.map(function(val){
-  return val + 3;
-});
+var singleVal = array.reduce(function(previousVal, currentVal) {
+  return previousVal + currentVal;
+}, 0);
