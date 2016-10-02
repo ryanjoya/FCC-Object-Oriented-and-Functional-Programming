@@ -1,8 +1,8 @@
 
-var oldArray = [1,2,3,4,5,6,7,8,9,10];
+var array = [1, 12, 21, 2];
 
 // Only change code below this line.
 
-var newArray = oldArray.filter(function(val) {
-  return val < 6;
+array.sort(function(a,b) {
+  return b - a;
 });
