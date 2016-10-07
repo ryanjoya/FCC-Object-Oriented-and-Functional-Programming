@@ -1,7 +1,7 @@
 
-var string = "Split me into an array";
-var array = [];
+var joinMe = ["Split","me","into","an","array"];
+var joinedString = '';
 
 // Only change code below this line.
 
-var array = string.split(' ');
+var joinedString = joinMe.join(" ");
